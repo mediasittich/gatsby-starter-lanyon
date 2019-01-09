@@ -1,5 +1,13 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 export default () => (
-    <h1>This is a header.</h1>
+    <header className="masthead">
+        <div className="container">
+            <h3 className="masthead-title">
+                <Link to="/">Lanyon</Link>
+                <small>Tagline</small>
+            </h3>
+        </div>
+    </header>
 )

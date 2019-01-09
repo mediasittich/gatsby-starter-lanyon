@@ -2,9 +2,16 @@ import React from'react';
 
 import Header from './header';
 
+import '../styles/poole.css';
+import '../styles/lanyon.css';
+
 export default ({ children }) => (
-    <div style={{ maxWidth: 650, margin: `0 auto`}}>
+    <div className="wrap">
         <Header />
-        {children}
+        
+        <main className="container content">
+            {children}
+        </main>
+        
     </div>
 )
