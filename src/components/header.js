@@ -1,13 +1,30 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, StaticQuery, graphql } from 'gatsby';
 
-export default () => (
+const Header = ({ data }) => (
     <header className="masthead">
         <div className="container">
             <h3 className="masthead-title">
-                <Link to="/">Lanyon</Link>
-                <small>Tagline</small>
+                <Link to="/">{data.site.siteMetadata.title}</Link>
+                <small>{data.site.siteMetadata.tagline}</small>
             </h3>
         </div>
     </header>
+)
+
+export default props => (
+    <StaticQuery
+        query={graphql`
+            query {
+                site {
+                    siteMetadata {
+                        title
+                        tagline
+                    }
+                }
+            }
+        `
+        }
+        render={data => <Header data={data} {...props} />}
+    />   
 )
