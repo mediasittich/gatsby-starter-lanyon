@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-starter-lanyon",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "gatsby": "^2.0.76",
+    "gatsby-source-filesystem": "^2.0.13",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
   },
