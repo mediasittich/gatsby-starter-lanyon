@@ -1,6 +1,7 @@
 import React, { Component } from'react';
 
 import Sidebar from './sidebar';
+import SidebarToggler from './sidebarToggler';
 import Header from './header';
 
 import '../styles/poole.css';
@@ -13,6 +14,7 @@ class Layout extends Component {
         return (
             <>
                 <Sidebar />
+                <SidebarToggler />
                 <div className="wrap">
                     <Header />
 
@@ -21,6 +23,8 @@ class Layout extends Component {
                     </main>
                     
                 </div>
+
+                
             </>
         );
     }

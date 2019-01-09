@@ -220,6 +220,7 @@ a.sidebar-nav-item:focus {
   background-color: #fff;
   border-radius: .25rem;
   cursor: pointer;
+  z-index: 10; /* toggler in front of all other elements */
 }
 
 .sidebar-toggle:before {
