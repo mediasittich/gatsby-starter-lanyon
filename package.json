@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "gatsby": "^2.0.89",
+    "gatsby-paginate": "^1.0.16",
     "gatsby-source-filesystem": "^2.0.13",
     "gatsby-transformer-remark": "^2.2.0",
     "react": "^16.5.1",
