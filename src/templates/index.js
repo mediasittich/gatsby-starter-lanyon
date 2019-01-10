@@ -11,8 +11,8 @@ const NavLink = props => {
     }
 }
 
-const IndexPage = ({ data, pathContext }) => {
-    const { group, index, first, last, pageCount } = pathContext;
+const IndexPage = ({ data, pageContext }) => {
+    const { group, index, first, last } = pageContext;
     const previousUrl = index - 1 === 1 ? "" : (index - 1).toString();
     const nextUrl = (index + 1).toString();
 
@@ -27,7 +27,7 @@ const IndexPage = ({ data, pathContext }) => {
 
                         <span className="post-date">{node.frontmatter.date}</span>
 
-                        <div>{node.excerpt}</div>
+                        <div dangerouslySetInnerHTML={{ __html: node.html }}/>
                     </div>
                 ))}
             </div>

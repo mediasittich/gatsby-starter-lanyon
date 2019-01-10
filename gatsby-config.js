@@ -11,6 +11,31 @@ module.exports = {
                 path: `${__dirname}/content/`,
             },
         },
-        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-prismjs`,
+                        options: {}
+                    },
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 720,
+                        }
+                    },
+                    {
+                        resolve: "gatsby-remark-external-links",
+                        options: {
+                            target: "_blank",
+                            rel: "nofollow noopener noreferrer"
+                        }
+                    }
+                ]
+            }
+        },
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
     ],
 }
