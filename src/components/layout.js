@@ -16,6 +16,11 @@ class Layout extends Component {
         this.handleCheckboxClick = this.handleCheckboxClick.bind(this);
     }
 
+    UNSAFE_componentWillMount() {
+        document.body.classList.add('layout-reverse'); // add class to reverse layout (sidebar on the right)
+        document.body.classList.add('theme-base-08');
+    }
+
     handleCheckboxClick(e) {
         let checkboxState = e;
 

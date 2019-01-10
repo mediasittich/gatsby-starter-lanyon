@@ -26,7 +26,7 @@ const IndexPage = ({ data, pathContext }) => {
                         </h1>
 
                         <span className="post-date">{node.frontmatter.date}</span>
-                        
+
                         <div>{node.excerpt}</div>
                     </div>
                 ))}
