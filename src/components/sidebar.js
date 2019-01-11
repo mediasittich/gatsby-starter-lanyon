@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { Link } from 'gatsby';
 
 class Sidebar extends Component {
     constructor(props) {
         super(props);
+        // this.node = React.createRef();
         this.state = {
             checked: false
         }
@@ -32,11 +34,14 @@ class Sidebar extends Component {
     }
     // Close sidebar when click outside
     handleOutsideClick(e) {
-        if (this.state.checked && !this.node.contains(e.target)) {
-            
-            this.setState({
-                checked: !this.state.checked
-            })
+        if (this.node) {
+            const domNode = ReactDOM.findDOMNode(this.node);
+
+            if (!this.node.contains(e.target)) {
+                this.setState({
+                    checked: false
+                })
+            }
         }
     }
 
