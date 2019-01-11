@@ -12,6 +12,10 @@ class Sidebar extends Component {
         this.handleOutsideClick = this.handleOutsideClick.bind(this);
     }
 
+    /**
+     * Detect click outside the sidebar when sidebar is open
+     * https://stackoverflow.com/questions/32553158/detect-click-outside-react-component
+     */
     componentDidMount() {
         document.addEventListener('mousedown', this.handleOutsideClick, false);
     }
@@ -20,19 +24,16 @@ class Sidebar extends Component {
     }
 
     handleCheckboxClick(e) {
-        // console.log(e.target.checked)
         let checkboxState = e.target.checked;
 
         this.setState({
             checked: checkboxState
         });
     }
-
+    // Close sidebar when click outside
     handleOutsideClick(e) {
-        // console.log(e.target)
-        
         if (this.state.checked && !this.node.contains(e.target)) {
-            console.log('clicked outside sidebar')
+            
             this.setState({
                 checked: !this.state.checked
             })
@@ -40,8 +41,6 @@ class Sidebar extends Component {
     }
 
     render() {
-        // console.log(this.state.checked)
-        // console.log(this.props)
         return (
             <>
                 {/* Target for toggling the sidebar '.sidebar-checkbox' is for regular styles, '#sidebar-checkbox' for behaviour. */}
