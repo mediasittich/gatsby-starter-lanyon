@@ -13,7 +13,6 @@ class Layout extends Component {
         this.state = {
             checked: false
         }
-        this.handleCheckboxClick = this.handleCheckboxClick.bind(this);
     }
 
     UNSAFE_componentWillMount() {
@@ -21,23 +20,12 @@ class Layout extends Component {
         // document.body.classList.add('theme-base-08');
     }
 
-    handleCheckboxClick(e) {
-        let checkboxState = e;
-
-        this.setState({
-            checked: checkboxState
-        })
-    }
-
     render() {
         const { children } = this.props;
 
         return (
             <>
-                <Sidebar
-                    checked={this.state.checked}
-                    onChange={(e) => {this.handleCheckboxClick(e.target.checked)}}
-                />
+                <Sidebar />
                 <SidebarToggler />
                 <div className="wrap">
                     <Header />
