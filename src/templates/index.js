@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "gatsby";
 
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const NavLink = props => {
     if (!props.test) {
@@ -15,9 +16,11 @@ const IndexPage = ({ data, pageContext }) => {
     const { group, index, first, last } = pageContext;
     const previousUrl = index - 1 === 1 ? "" : (index - 1).toString();
     const nextUrl = (index + 1).toString();
-
+    const site = data.site.siteMetadata
+    
     return (
         <Layout>
+            <SEO title={`${site.title} | ${site.tagline}`} />
             <div className="posts">
                 {group.map(({ node }) => (
                     <div key={node.id} className="post">
@@ -43,3 +46,14 @@ const IndexPage = ({ data, pageContext }) => {
 }
 
 export default IndexPage;
+
+export const query = graphql`
+    query {
+        site {
+            siteMetadata {
+                title
+                tagline
+            }
+        }
+    }
+`

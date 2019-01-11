@@ -2,6 +2,10 @@ module.exports = {
     siteMetadata: {
         title: `Lanyon`,
         tagline: `A Gatsby Theme ported from the Jekyll Theme`,
+        description: `Gatsby starter built on top of hello-world starter, design ported from Lanyon Jekyll theme`,
+        url: `https://www.doe.com`,
+        image: `/images/gatsby-icon.png`,
+        twitterUsername: `@mediasittich`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
