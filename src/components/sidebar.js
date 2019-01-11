@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'gatsby';
 
+const isActive = ({ isCurrent }) =>
+    isCurrent ? { className: "sidebar-nav-item active" } : null;
+
+const ExactNavLink = props => {
+    return <Link getProps={isActive} {...props} />
+}
+
 class Sidebar extends Component {
     constructor(props) {
         super(props);
@@ -66,8 +73,8 @@ class Sidebar extends Component {
                     </header>
 
                     <nav className="sidebar-nav">
-                        <Link to="/" className="sidebar-nav-item">Home</Link>
-                        <Link to="/about" className="sidebar-nav-item">About</Link>
+                        <ExactNavLink to="/" className="sidebar-nav-item">Home</ExactNavLink>
+                        <ExactNavLink to="/about" className="sidebar-nav-item">About</ExactNavLink>
                         <a href="http://github.org" className="sidebar-nav-item">GitHub project</a>
                     </nav>
 
