@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
 import { Link } from 'gatsby';
 
 const isActive = ({ isCurrent }) =>
@@ -10,14 +9,17 @@ const ExactNavLink = props => {
 }
 
 const Sidebar = props => {
+    let sidebarClasses = ['sidebar'];
+
+    if (props.show) {
+        sidebarClasses = ['sidebar', 'open'];
+    }
     return (
         <>
-            {/* Target for toggling the sidebar '.sidebar-checkbox' is for regular styles, '#sidebar-checkbox' for behaviour. */}
-
             {props.children}
 
             {/* Toggleable sidebar */}
-            <aside className="sidebar" id="sidebar">
+            <aside className={sidebarClasses.join(' ')} id="sidebar">
                 <header className="sidebar-item">
                     <p>
                     A reserved Gatsby theme, ported from the Jekyll theme of the same name, that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mediasittich">@mediasittich</a>.

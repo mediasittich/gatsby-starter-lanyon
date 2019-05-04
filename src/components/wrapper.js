@@ -3,7 +3,7 @@ import React from 'react';
 const contentWrapper = props => {
     let wrapperClasses = ['wrap'];
 
-    if (props.show) {
+    if (props.sidebarOpen) {
         wrapperClasses = ['wrap', 'open'];
     }
     

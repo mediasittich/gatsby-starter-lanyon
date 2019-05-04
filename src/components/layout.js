@@ -3,6 +3,7 @@ import React, { Component } from'react';
 import Sidebar from './sidebar';
 import SidebarCheckbox from './sidebarCheckbox';
 import SidebarToggler from './sidebarToggler';
+import Backdrop from './backdrop';
 import ContentWrapper from './wrapper';
 import Header from './header';
 
@@ -15,6 +16,7 @@ class Layout extends Component {
         this.state = {
             sideBarOpen: false
         };
+        this.sidebarToggleClickHandler = this.sidebarToggleClickHandler.bind(this);
     }
     
 
@@ -29,19 +31,36 @@ class Layout extends Component {
         });
     };
 
+    backdropClickHandler = () => {
+        this.setState({sideBarOpen: false});
+    };
+
     render() {
         const { children } = this.props;
+        let backdrop;
+
+        if (this.state.sideBarOpen) {
+            backdrop = <Backdrop click={this.backdropClickHandler} />
+        }
 
         return (
             <>
-                <Sidebar>
+                <Sidebar
+                    show={this.state.sideBarOpen}
+                >
+                    {/* Target for toggling the sidebar '.sidebar-checkbox' is for regular styles, '#sidebar-checkbox' for behaviour. */}
                     <SidebarCheckbox 
                         value={this.state.sideBarOpen}
                         toggle={this.sidebarToggleClickHandler}
                     />
                 </Sidebar>
-                <SidebarToggler />
-                <ContentWrapper>
+                <SidebarToggler
+                    active={this.state.sideBarOpen}
+                />
+                <ContentWrapper
+                    sidebarOpen={this.state.sideBarOpen}
+                >
+                    {backdrop}
                     <Header />
                     <main className="container content">
                         {children}
