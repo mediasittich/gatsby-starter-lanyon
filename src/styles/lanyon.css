@@ -424,9 +424,9 @@ a.pagination-item:hover {
   right: 1rem;
 }
 
-.layout-reverse #sidebar-checkbox:checked ~ .sidebar,
-.layout-reverse #sidebar-checkbox:checked ~ .wrap,
-.layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
+.layout-reverse .sidebar.open,
+.layout-reverse .wrap.open,
+.layout-reverse .sidebar-toggle.active {
   -webkit-transform: translateX(-14rem);
       -ms-transform: translateX(-14rem);
           transform: translateX(-14rem);
@@ -442,8 +442,7 @@ a.pagination-item:hover {
 
 /* Red */
 .theme-base-08 .sidebar,
-.theme-base-08 .sidebar-toggle:active,
-.theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
+.theme-base-08 .sidebar-toggle.active {
   background-color: #ac4142;
 }
 .theme-base-08 .container a,
@@ -457,9 +456,7 @@ a.pagination-item:hover {
   background-image:     -ms-linear-gradient(to bottom, #ac4142, #ac4142 20%, #fff 20%, #fff 40%, #ac4142 40%, #ac4142 60%, #fff 60%, #fff 80%, #ac4142 80%, #ac4142 100%);
   background-image:         linear-gradient(to bottom, #ac4142, #ac4142 20%, #fff 20%, #fff 40%, #ac4142 40%, #ac4142 60%, #fff 60%, #fff 80%, #ac4142 80%, #ac4142 100%);
 }
-.theme-base-08 .sidebar-toggle:active:before,
-.theme-base-08 #sidebar-checkbox:focus ~ .sidebar-toggle:before,
-.theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+.theme-base-08 .sidebar-toggle.active:before {
   background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #ac4142 20%, #ac4142 40%, #fff 40%, #fff 60%, #ac4142 60%, #ac4142 80%, #fff 80%, #fff 100%);
   background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #ac4142 20%, #ac4142 40%, #fff 40%, #fff 60%, #ac4142 60%, #ac4142 80%, #fff 80%, #fff 100%);
   background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #ac4142 20%, #ac4142 40%, #fff 40%, #fff 60%, #ac4142 60%, #ac4142 80%, #fff 80%, #fff 100%);
@@ -468,8 +465,7 @@ a.pagination-item:hover {
 
 /* Orange */
 .theme-base-09 .sidebar,
-.theme-base-09 .sidebar-toggle:active,
-.theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {
+.theme-base-09 .sidebar-toggle.active {
   background-color: #d28445;
 }
 .theme-base-09 .container a,
@@ -483,9 +479,7 @@ a.pagination-item:hover {
   background-image:     -ms-linear-gradient(to bottom, #d28445, #d28445 20%, #fff 20%, #fff 40%, #d28445 40%, #d28445 60%, #fff 60%, #fff 80%, #d28445 80%, #d28445 100%);
   background-image:         linear-gradient(to bottom, #d28445, #d28445 20%, #fff 20%, #fff 40%, #d28445 40%, #d28445 60%, #fff 60%, #fff 80%, #d28445 80%, #d28445 100%);
 }
-.theme-base-09 .sidebar-toggle:active:before,
-.theme-base-09 #sidebar-checkbox:focus ~ .sidebar-toggle:before,
-.theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+.theme-base-09 .sidebar-toggle.active:before {
   background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #d28445 20%, #d28445 40%, #fff 40%, #fff 60%, #d28445 60%, #d28445 80%, #fff 80%, #fff 100%);
   background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #d28445 20%, #d28445 40%, #fff 40%, #fff 60%, #d28445 60%, #d28445 80%, #fff 80%, #fff 100%);
   background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #d28445 20%, #d28445 40%, #fff 40%, #fff 60%, #d28445 60%, #d28445 80%, #fff 80%, #fff 100%);
@@ -494,8 +488,7 @@ a.pagination-item:hover {
 
 /* Yellow */
 .theme-base-0a .sidebar,
-.theme-base-0a .sidebar-toggle:active,
-.theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle {
+.theme-base-0a .sidebar-toggle.active {
   background-color: #f4bf75;
 }
 .theme-base-0a .container a,
@@ -509,9 +502,7 @@ a.pagination-item:hover {
   background-image:     -ms-linear-gradient(to bottom, #f4bf75, #f4bf75 20%, #fff 20%, #fff 40%, #f4bf75 40%, #f4bf75 60%, #fff 60%, #fff 80%, #f4bf75 80%, #f4bf75 100%);
   background-image:         linear-gradient(to bottom, #f4bf75, #f4bf75 20%, #fff 20%, #fff 40%, #f4bf75 40%, #f4bf75 60%, #fff 60%, #fff 80%, #f4bf75 80%, #f4bf75 100%);
 }
-.theme-base-0a .sidebar-toggle:active:before,
-.theme-base-0a #sidebar-checkbox:focus ~ .sidebar-toggle:before,
-.theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+.theme-base-0a .sidebar-toggle.active:before {
   background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #f4bf75 20%, #f4bf75 40%, #fff 40%, #fff 60%, #f4bf75 60%, #f4bf75 80%, #fff 80%, #fff 100%);
   background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #f4bf75 20%, #f4bf75 40%, #fff 40%, #fff 60%, #f4bf75 60%, #f4bf75 80%, #fff 80%, #fff 100%);
   background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #f4bf75 20%, #f4bf75 40%, #fff 40%, #fff 60%, #f4bf75 60%, #f4bf75 80%, #fff 80%, #fff 100%);
@@ -520,8 +511,7 @@ a.pagination-item:hover {
 
 /* Green */
 .theme-base-0b .sidebar,
-.theme-base-0b .sidebar-toggle:active,
-.theme-base-0b #sidebar-checkbox:checked ~ .sidebar-toggle {
+.theme-base-0b .sidebar-toggle.active {
   background-color: #90a959;
 }
 .theme-base-0b .container a,
@@ -535,9 +525,7 @@ a.pagination-item:hover {
   background-image:     -ms-linear-gradient(to bottom, #90a959, #90a959 20%, #fff 20%, #fff 40%, #90a959 40%, #90a959 60%, #fff 60%, #fff 80%, #90a959 80%, #90a959 100%);
   background-image:         linear-gradient(to bottom, #90a959, #90a959 20%, #fff 20%, #fff 40%, #90a959 40%, #90a959 60%, #fff 60%, #fff 80%, #90a959 80%, #90a959 100%);
 }
-.theme-base-0b .sidebar-toggle:active:before,
-.theme-base-0b #sidebar-checkbox:focus ~ .sidebar-toggle:before,
-.theme-base-0b #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+.theme-base-0b .sidebar-toggle.active:before {
   background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #90a959 20%, #90a959 40%, #fff 40%, #fff 60%, #90a959 60%, #90a959 80%, #fff 80%, #fff 100%);
   background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #90a959 20%, #90a959 40%, #fff 40%, #fff 60%, #90a959 60%, #90a959 80%, #fff 80%, #fff 100%);
   background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #90a959 20%, #90a959 40%, #fff 40%, #fff 60%, #90a959 60%, #90a959 80%, #fff 80%, #fff 100%);
@@ -546,8 +534,7 @@ a.pagination-item:hover {
 
 /* Cyan */
 .theme-base-0c .sidebar,
-.theme-base-0c .sidebar-toggle:active,
-.theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle {
+.theme-base-0c .sidebar-toggle.active {
   background-color: #75b5aa;
 }
 .theme-base-0c .container a,
@@ -561,9 +548,7 @@ a.pagination-item:hover {
   background-image:     -ms-linear-gradient(to bottom, #75b5aa, #75b5aa 20%, #fff 20%, #fff 40%, #75b5aa 40%, #75b5aa 60%, #fff 60%, #fff 80%, #75b5aa 80%, #75b5aa 100%);
   background-image:         linear-gradient(to bottom, #75b5aa, #75b5aa 20%, #fff 20%, #fff 40%, #75b5aa 40%, #75b5aa 60%, #fff 60%, #fff 80%, #75b5aa 80%, #75b5aa 100%);
 }
-.theme-base-0c .sidebar-toggle:active:before,
-.theme-base-0c #sidebar-checkbox:focus ~ .sidebar-toggle:before,
-.theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+.theme-base-0c .sidebar-toggle.active:before {
   background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #75b5aa 20%, #75b5aa 40%, #fff 40%, #fff 60%, #75b5aa 60%, #75b5aa 80%, #fff 80%, #fff 100%);
   background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #75b5aa 20%, #75b5aa 40%, #fff 40%, #fff 60%, #75b5aa 60%, #75b5aa 80%, #fff 80%, #fff 100%);
   background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #75b5aa 20%, #75b5aa 40%, #fff 40%, #fff 60%, #75b5aa 60%, #75b5aa 80%, #fff 80%, #fff 100%);
@@ -572,8 +557,7 @@ a.pagination-item:hover {
 
 /* Blue */
 .theme-base-0d .sidebar,
-.theme-base-0d .sidebar-toggle:active,
-.theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle {
+.theme-base-0d .sidebar-toggle.active {
   background-color: #6a9fb5;
 }
 .theme-base-0d .container a,
@@ -587,9 +571,7 @@ a.pagination-item:hover {
   background-image:     -ms-linear-gradient(to bottom, #6a9fb5, #6a9fb5 20%, #fff 20%, #fff 40%, #6a9fb5 40%, #6a9fb5 60%, #fff 60%, #fff 80%, #6a9fb5 80%, #6a9fb5 100%);
   background-image:         linear-gradient(to bottom, #6a9fb5, #6a9fb5 20%, #fff 20%, #fff 40%, #6a9fb5 40%, #6a9fb5 60%, #fff 60%, #fff 80%, #6a9fb5 80%, #6a9fb5 100%);
 }
-.theme-base-0d .sidebar-toggle:active:before,
-.theme-base-0d #sidebar-checkbox:focus ~ .sidebar-toggle:before,
-.theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+.theme-base-0d .sidebar-toggle.active:before {
   background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #6a9fb5 20%, #6a9fb5 40%, #fff 40%, #fff 60%, #6a9fb5 60%, #6a9fb5 80%, #fff 80%, #fff 100%);
   background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #6a9fb5 20%, #6a9fb5 40%, #fff 40%, #fff 60%, #6a9fb5 60%, #6a9fb5 80%, #fff 80%, #fff 100%);
   background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #6a9fb5 20%, #6a9fb5 40%, #fff 40%, #fff 60%, #6a9fb5 60%, #6a9fb5 80%, #fff 80%, #fff 100%);
@@ -598,8 +580,7 @@ a.pagination-item:hover {
 
 /* Magenta */
 .theme-base-0e .sidebar,
-.theme-base-0e .sidebar-toggle:active,
-.theme-base-0e #sidebar-checkbox:checked ~ .sidebar-toggle {
+.theme-base-0e .sidebar-toggle.active {
   background-color: #aa759f;
 }
 .theme-base-0e .container a,
@@ -613,9 +594,7 @@ a.pagination-item:hover {
   background-image:     -ms-linear-gradient(to bottom, #aa759f, #aa759f 20%, #fff 20%, #fff 40%, #aa759f 40%, #aa759f 60%, #fff 60%, #fff 80%, #aa759f 80%, #aa759f 100%);
   background-image:         linear-gradient(to bottom, #aa759f, #aa759f 20%, #fff 20%, #fff 40%, #aa759f 40%, #aa759f 60%, #fff 60%, #fff 80%, #aa759f 80%, #aa759f 100%);
 }
-.theme-base-0e .sidebar-toggle:active:before,
-.theme-base-0e #sidebar-checkbox:focus ~ .sidebar-toggle:before,
-.theme-base-0e #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+.theme-base-0e .sidebar-toggle.active:before {
   background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #aa759f 20%, #aa759f 40%, #fff 40%, #fff 60%, #aa759f 60%, #aa759f 80%, #fff 80%, #fff 100%);
   background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #aa759f 20%, #aa759f 40%, #fff 40%, #fff 60%, #aa759f 60%, #aa759f 80%, #fff 80%, #fff 100%);
   background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #aa759f 20%, #aa759f 40%, #fff 40%, #fff 60%, #aa759f 60%, #aa759f 80%, #fff 80%, #fff 100%);
@@ -624,8 +603,7 @@ a.pagination-item:hover {
 
 /* Brown */
 .theme-base-0f .sidebar,
-.theme-base-0f .sidebar-toggle:active,
-.theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle {
+.theme-base-0f .sidebar-toggle.active {
   background-color: #8f5536;
 }
 .theme-base-0f .container a,
@@ -639,9 +617,7 @@ a.pagination-item:hover {
   background-image:     -ms-linear-gradient(to bottom, #8f5536, #8f5536 20%, #fff 20%, #fff 40%, #8f5536 40%, #8f5536 60%, #fff 60%, #fff 80%, #8f5536 80%, #8f5536 100%);
   background-image:         linear-gradient(to bottom, #8f5536, #8f5536 20%, #fff 20%, #fff 40%, #8f5536 40%, #8f5536 60%, #fff 60%, #fff 80%, #8f5536 80%, #8f5536 100%);
 }
-.theme-base-0f .sidebar-toggle:active:before,
-.theme-base-0f #sidebar-checkbox:focus ~ .sidebar-toggle:before,
-.theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+.theme-base-0f .sidebar-toggle.active:before {
   background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #8f5536 20%, #8f5536 40%, #fff 40%, #fff 60%, #8f5536 60%, #8f5536 80%, #fff 80%, #fff 100%);
   background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #8f5536 20%, #8f5536 40%, #fff 40%, #fff 60%, #8f5536 60%, #8f5536 80%, #fff 80%, #fff 100%);
   background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #8f5536 20%, #8f5536 40%, #fff 40%, #fff 60%, #8f5536 60%, #8f5536 80%, #fff 80%, #fff 100%);
@@ -656,19 +632,19 @@ a.pagination-item:hover {
  * aside when toggled.
  */
 
-.sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
+.sidebar-overlay .wrap.open {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
 }
-.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
+.sidebar-overlay .sidebar-toggle.active {
   box-shadow: 0 0 0 .25rem #fff;
 }
-.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
+.sidebar-overlay .sidebar.open {
   box-shadow: .25rem 0 .5rem rgba(0,0,0,.1);
 }
 
 /* Only one tweak for a reverse layout */
-.layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
+.layout-reverse.sidebar-overlay .sidebar.open {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }

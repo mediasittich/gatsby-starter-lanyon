@@ -21,8 +21,11 @@ class Layout extends Component {
     
 
     UNSAFE_componentWillMount() {
+        /* To apply themes and change placement of sidebar uncomment and update code below */
+        
         // document.body.classList.add('layout-reverse'); // add class to reverse layout (sidebar on the right)
-        // document.body.classList.add('theme-base-08');
+        // document.body.classList.add('sidebar-overlay'); // add class to make sidebar overlay viewport content
+        // document.body.classList.add('theme-base-0f'); // add theme class to layout
     }
 
     sidebarToggleClickHandler = () => {
