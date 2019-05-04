@@ -1,17 +1,22 @@
 import React, { Component } from'react';
 
 import Sidebar from './sidebar';
-import ContentWrapper from './wrapper';
+import SidebarCheckbox from './sidebarCheckbox';
 import SidebarToggler from './sidebarToggler';
+import ContentWrapper from './wrapper';
 import Header from './header';
 
 import '../styles/poole.css';
 import '../styles/lanyon.css';
 
 class Layout extends Component {
-    state = {
-        sideBarOpen: false
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            sideBarOpen: false
+        };
+    }
+    
 
     UNSAFE_componentWillMount() {
         // document.body.classList.add('layout-reverse'); // add class to reverse layout (sidebar on the right)
@@ -29,7 +34,12 @@ class Layout extends Component {
 
         return (
             <>
-                <Sidebar />
+                <Sidebar>
+                    <SidebarCheckbox 
+                        value={this.state.sideBarOpen}
+                        toggle={this.sidebarToggleClickHandler}
+                    />
+                </Sidebar>
                 <SidebarToggler />
                 <ContentWrapper>
                     <Header />
